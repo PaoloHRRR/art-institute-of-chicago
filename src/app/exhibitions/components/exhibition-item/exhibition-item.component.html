@@ -1,0 +1,18 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{exhibition.title}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <img mat-card-image [src]="exhibition.image_url" alt="Photo of {{exhibition.title}}">
+    <p>
+      {{'exhibitions.card.status' | translate}} : {{exhibition.status}}
+    </p>
+    <p>
+      {{exhibition.short_description}}
+    </p>
+  </mat-card-content>
+  <mat-card-footer>
+    <a href="{{exhibition.web_url">{{ 'exhibitions.card.details' | translate}}</a>
+    <p>{{exhibition.aic_start_at.getMonth()}} {{exhibition.aic_start_at.getDay()}} ,{{exhibition.aic_start_at.getFullYear()}} - {{exhibition.aic_end_at.getMonth()}} {{exhibition.aic_end_at.getDay()}} ,{{exhibition.aic_end_at.getFullYear()}}</p>
+  </mat-card-footer>
+</mat-card>
