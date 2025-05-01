@@ -5,7 +5,7 @@ import {Exhibition} from '../model/exhibition.entity';
 @Injectable({
   providedIn: 'root'
 })
-export class LogoApiService {
+export class ExhibitionApiService {
   baseUrl = environment.AICApiBaseUrl;
 
   constructor() {
