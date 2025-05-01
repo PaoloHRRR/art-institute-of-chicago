@@ -1,0 +1,16 @@
+{
+  "aic": "Art Institute of Chicago Exhibitions",
+  "exhibitions": {
+    "title": "All Exhibitions Information",
+    "card": {
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "details": "View details"
+    }
+  },
+  "footer": {
+    "rights": "2025 Art Institute of Chicago. All rights reserved.",
+    "developed-by": "Developed by"
+  }
+}

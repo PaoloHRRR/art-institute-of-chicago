@@ -1,0 +1,16 @@
+{
+  "aic": "Exposiciones del Instituto de Arte de Chicago",
+  "exhibitions": {
+    "title": "Toda la información de las exposiciones",
+    "card": {
+      "title": "Titulo",
+      "description": "Descripción",
+      "status": "Estado",
+      "details": "Ver detalles"
+    }
+  },
+  "footer": {
+    "rights": "2025 Instituto de Arte de Chicago. Todos los derechos reservados.",
+    "developed-by": "Desarrollado por"
+  }
+}
