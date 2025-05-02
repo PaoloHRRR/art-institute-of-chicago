@@ -1,0 +1,6 @@
+<mat-nav-list>
+  @for (exhibition of exhibitions; track exhibition.title) {
+    <app-exhibition-item (exhibitionSelected)="onExhibitionSelected($event);"
+                     [exhibition]="exhibition"/>
+  }
+</mat-nav-list>
