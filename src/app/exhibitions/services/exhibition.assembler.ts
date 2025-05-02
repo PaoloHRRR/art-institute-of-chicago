@@ -12,6 +12,7 @@ export class ExhibitionAssembler {
       status: resource.status,
       aic_start_at: resource.aic_start_at,
       aic_end_at: resource.aic_end_at,
+      gallery_title: resource.gallery_title,
     };
   }
   static toEntitiesFromResponse(response: ExhibitionResponse): Exhibition[] {

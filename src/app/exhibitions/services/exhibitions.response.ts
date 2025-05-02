@@ -11,4 +11,5 @@ export interface ExhibitionResource {
   status: string;
   aic_start_at: Date;
   aic_end_at: Date;
+  gallery_title: string;
 }
