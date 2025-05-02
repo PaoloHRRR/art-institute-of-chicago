@@ -1,6 +1,6 @@
 export interface ExhibitionResponse {
   status: String,
-  exhibitions: ExhibitionResource[]
+  data: ExhibitionResource[]
 }
 
 export interface ExhibitionResource {

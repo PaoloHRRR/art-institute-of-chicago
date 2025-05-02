@@ -15,7 +15,7 @@ export class ExhibitionAssembler {
     };
   }
   static toEntitiesFromResponse(response: ExhibitionResponse): Exhibition[] {
-    return response.exhibitions.map(exhibition =>
+    return response.data.map(exhibition =>
     this.toEntityFromResource(exhibition));
   }
 }
