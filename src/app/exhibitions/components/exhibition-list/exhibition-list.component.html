@@ -1,4 +1,5 @@
 <mat-nav-list>
+  <p class="title">{{ 'exhibitions.title' | translate }}</p>
   @for (exhibition of exhibitions; track exhibition.title) {
     <app-exhibition-item (exhibitionSelected)="onExhibitionSelected($event);"
                      [exhibition]="exhibition"/>
