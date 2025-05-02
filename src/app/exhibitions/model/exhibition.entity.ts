@@ -6,6 +6,7 @@ export class Exhibition {
   status: string;
   aic_start_at: Date;
   aic_end_at: Date;
+  gallery_title: string;
 
   constructor(){
     this.title = '';
@@ -15,5 +16,6 @@ export class Exhibition {
     this.status = '';
     this.aic_start_at = new Date();
     this.aic_end_at = new Date();
+    this.gallery_title = '';
   }
 }
