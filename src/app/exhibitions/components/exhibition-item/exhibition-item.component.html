@@ -1,18 +1,28 @@
-<mat-card class="example-card" appearance="outlined">
+<mat-card class="exhibition-card" appearance="outlined">
   <mat-card-header>
-    <mat-card-title>{{exhibition.title}}</mat-card-title>
+    <mat-card-title class="card-title">{{ exhibition.title }}</mat-card-title>
   </mat-card-header>
+
   <mat-card-content>
-    <img mat-card-image [src]="exhibition.image_url" alt="Photo of {{exhibition.title}}">
-    <p>
-      {{'exhibitions.card.status' | translate}} : {{exhibition.status}}
+    <img mat-card-image [src]="exhibition.image_url" [alt]="'Photo of ' + exhibition.title" />
+
+    <p class="status">
+      {{ 'exhibitions.card.status' | translate }}:
+      <strong>{{ exhibition.status }}</strong>
     </p>
-    <p>
-      {{exhibition.short_description}}
+
+    <p class="description">
+      {{ exhibition.short_description }}
     </p>
   </mat-card-content>
-  <mat-card-footer>
-    <a href="{{exhibition.web_url">{{ 'exhibitions.card.details' | translate}}</a>
-    <p>{{exhibition.aic_start_at.getMonth()}} {{exhibition.aic_start_at.getDay()}} ,{{exhibition.aic_start_at.getFullYear()}} - {{exhibition.aic_end_at.getMonth()}} {{exhibition.aic_end_at.getDay()}} ,{{exhibition.aic_end_at.getFullYear()}}</p>
+
+  <mat-card-footer class="card-footer">
+    <a class="details-link" [href]="exhibition.web_url" target="_blank">
+      {{ 'exhibitions.card.details' | translate }}
+    </a>
+    <p class="date-range">
+      {{ exhibition.aic_start_at | date: 'MMM d, y' }} -
+      {{ exhibition.aic_end_at | date: 'MMM d, y' }}
+    </p>
   </mat-card-footer>
 </mat-card>
