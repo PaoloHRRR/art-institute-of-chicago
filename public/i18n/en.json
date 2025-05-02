@@ -3,10 +3,9 @@
   "exhibitions": {
     "title": "All Exhibitions Information",
     "card": {
-      "title": "Title",
-      "description": "Description",
       "status": "Status",
-      "details": "View details"
+      "details": "View details",
+      "gallery": "Gallery"
     }
   },
   "footer": {

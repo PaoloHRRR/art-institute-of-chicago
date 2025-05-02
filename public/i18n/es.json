@@ -3,10 +3,9 @@
   "exhibitions": {
     "title": "Toda la información de las exposiciones",
     "card": {
-      "title": "Titulo",
-      "description": "Descripción",
       "status": "Estado",
-      "details": "Ver detalles"
+      "details": "Ver detalles",
+      "gallery": "Galleria"
     }
   },
   "footer": {
