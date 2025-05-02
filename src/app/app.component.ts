@@ -3,12 +3,14 @@ import {TranslateService} from '@ngx-translate/core';
 import {ExhibitionListComponent} from './exhibitions/components/exhibition-list/exhibition-list.component';
 import {Exhibition} from './exhibitions/model/exhibition.entity';
 import {ExhibitionApiService} from './exhibitions/services/exhibition-api.service';
+import {ToolbarContentComponent} from './public/components/toolbar-content/toolbar-content.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    ExhibitionListComponent
+    ExhibitionListComponent,
+    ToolbarContentComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
